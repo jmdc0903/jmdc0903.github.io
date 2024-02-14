@@ -10,20 +10,20 @@
 }
 
 body, html {
-    background-image: url("../images/background.jpg");
+    background: url("../images/background.jpg") no-repeat center center fixed;
     margin: 0px auto;
-    height: 100%;
-    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    position: relative;
+    
 
     scroll-behavior:smooth;
-    font-family: akintongfontnato;
+    /* font-family: akintongfontnato; */
     font-size: 24px;
 }
-
 
 nav {
     height: 65px;
@@ -34,13 +34,17 @@ nav {
     justify-content: center;
     align-content: center;
     margin: 0px auto;
+    border-radius: 25px;
 }
+nav div {
+    padding-left: 10px;
 
+}
 nav div:hover {
     text-decoration: underline;
 }
 
-ul {
+ul.mynav {
     padding: 0px;
     margin: 0px;
     list-style: none;
@@ -59,6 +63,7 @@ ul li a:hover{
 }
 
 main {
+    color: #f7f7f7;
     background-image: url("../images/background.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -68,32 +73,49 @@ main {
     height: 1024px;
 }
 
-.aboutsection {
-    background-color: aqua;
-    /* background-image: url("../images/bg-image.jpg");
-    background-repeat: no-repeat; */
-    /* background-size: cover;
-    background-position: center; */
-    /* color: var(--fontColors); */
-    height: 1024px;
-    width: 1024px;
-    background-size: cover;
+main #aboutsection h3 {
+    padding-left: 10px;
 }
 
-.servicessection {
-    background-color: #292b2c;
+main #aboutsection p {
+    display: flex;
+    flex-flow: row-reverse;
+
+}
+
+
+#aboutsection {
+    /* height: 1024px;
+    width: 1024px;
+    background-image: url("../images/newpic.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    margin: 0px auto;
+    margin: 0px auto; */
+
+    background: url("../images/newpic.png") no-repeat center center;
+    margin: 0px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1024px;
+    width: 1024px;
+    
+}
+
+#servicessection {
+    background-color: #5e6569;
     color: var(--fontColors);
-    /* display: flex; */
     flex-direction: column;
     justify-content: space-around;
     height: 1024px;
     width: 1024px;
 }
 
-.portfoliosection{
-    background-color: aqua;
-    color: black;
-    /* display: flex; */
+#portfoliosection{
+    background-color: rgb(8, 33, 33);
+    color: var(--fontColors);
     flex-direction: column;
     justify-content: space-around;
     height: 1024px;
@@ -122,15 +144,38 @@ main {
     transition: 1s;
 } */
 
-.contactussection {
-    background-color: #5cb85c;
+#contactussection {
+    background-color: #981a9a;
     color: var(--fontColors);
     height: 300px;
     width: 1024px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    position: static;
+}
+
+
+#contactussection div h3{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    position: static;
+
+}
+
+#container {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #73AD21;
+
 }
 
 footer {
     height: 25%;
-    background-color: #292b2c;
+    background-color: #2e4652;
 }
 

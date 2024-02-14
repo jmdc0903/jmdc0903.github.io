@@ -19,21 +19,21 @@
     <nav>
         <div> MichaelLOGO </div>
 
-        <ul>
+        <ul class="mynav">
             <li>
-                <a class="aboutsection" href="#aboutsection"> About</a>
+                <a href="#aboutsection"> About</a>
             </li>
 
             <li>
-                <a class="servicessection" href="#servicessection"> Services</a>
+                <a href="#servicessection"> Services</a>
             </li>
 
             <li>
-                <a href="portfoliosection"> Portfolio</a>
+                <a href="#portfoliosection"> Portfolio</a>
             </li>
 
             <li>
-                <a href="contactussection"> Contact Us</a>
+                <a href="#contactussection"> Contact Us</a>
             </li>
 
         </ul>
@@ -41,29 +41,50 @@
     </nav>
 
     <main>
-        <section class="aboutsection">
-
+        <section id="aboutsection">
+            <br/> <br/>
             <h3>Hi! I'm Michael!</h3>
-            <p>This website was created for....</p>
+            <p>We provide digital solutions for your business.</p>
 
 
         </section>
 
-        <section class="servicessection">
+        <section id="servicessection">
 
             Services
         </section>
 
-        <section class="portfoliosection">
+        <section id="portfoliosection">
 
             Portfolio
         </section>
 
-        <section class="contactussection">
+        <section id="contactussection">Contact Us</section>
+            <div>
+                <h3>Contact Form</h3>
+                    <div class="container">
+                        <form action="/action_page.php">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        
+                            <label for="country">Country</label>
+                            <select id="country" name="country">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                            </select>
+                        
+                            <label for="subject">Subject</label>
+                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
 
-            Contact Us
-
-        </section>
+            </div>
 
         <footer>
 
