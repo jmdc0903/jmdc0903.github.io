@@ -1,0 +1,30 @@
+body, html {
+    margin: 0px auto;
+    padding: 0px;
+    display: flex;
+}
+
+nav {
+    display: flex;
+    height: 1024px;
+    width: 1024px;
+    align-content: center;
+}
+
+nav div {
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    width: 1024px;
+
+}
+
+nav ul {
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 20px;
+    width: 1024px;  
+}
