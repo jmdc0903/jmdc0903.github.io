@@ -1,0 +1,18 @@
+nav {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+
+}
+nav ul li{
+    height: auto;
+    width: auto;
+    display: flex;
+  
+}
